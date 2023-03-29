@@ -71,7 +71,13 @@
             document.getElementById('pEstilo').style.color= 'darkred';
         }
         function ocultar(){
-            document.getElementById('texto').style.display = 'none';
+            let estado = document.getElementById('texto').style.display;
+            if(estado == "none"){
+                document.getElementById('texto').style.display = 'inline';
+            }else{
+                document.getElementById('texto').style.display = 'none';
+            }
+
             // exibir se estiver oculto e vice e versa??
         }
         function exibirJanela(){
