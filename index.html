@@ -9,6 +9,11 @@
 <body>
     <div>
         <div>
+            <nav>
+                <a href="#src">Editando SRC da pagina</a>
+            </nav>
+        </div>
+        <div>
             <h1>Primeiro java Script</h1>
             <p>Passe o mouse sobre o botão para ver a data e hora do sistema</p>
             <button onmouseover="document.getElementById('dh').innerHTML = Date ()"
@@ -20,7 +25,7 @@
                 <button onclick="copiaParagrafo()">Clique AQUI para copiar o paragrafo</button>
                 <p id="par2"></p>
             </div>
-            <div>
+            <div id="src">
                 <h2>Editando a fonte de uma imagem</h2>
                 <button onclick="ligar()">Ligue a Luz</button>
                 <img  id="luz" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="imagem de uma lampada">
@@ -31,6 +36,22 @@
                 <h2>Editando Estilo com JS</h2>
                 <p id="pEstilo">O estilo desse paragrafo será alterado com o clique do botão abaixo.</p>
                 <button onclick="alteraEstilo()">Altere o estilo do paragrafo</button>  
+            </div>
+            <div>
+                <h2>Ocultar elementos com JS</h2>
+                <label for="Texto">Entrada de texto</label>
+                <input id="texto" type="text">
+                <button onclick="ocultar()">Ocultar a caixa de texto</button>
+            </div>
+            <div>
+                <h2>Exibindo janela de alerta</h2>
+                <p>Ao clicar no botão veja uma mensagem</p>
+                <button onclick="exibirJanela()"> Clique para exibir um janela</button>
+            </div>
+            <div>
+                <h2>Reescrevendo o HTML</h2>
+                <p>A função document.write() Reescrevendo a página</p>
+                <button onclick="recarregar()"> Recarregar a página</button>
             </div>
         </div>
     </div>
@@ -48,7 +69,17 @@
         function alteraEstilo(){
             document.getElementById('pEstilo').style.fontSize='3rem';
             document.getElementById('pEstilo').style.color= 'darkred';
-            
+        }
+        function ocultar(){
+            document.getElementById('texto').style.display = 'none';
+            // exibir se estiver oculto e vice e versa??
+        }
+        function exibirJanela(){
+            window.alert("Olá Visitante!!");
+        }
+        function recarregar(){
+            document.write();
+            window.alert("Se fudeu!!");
         }
         
     </script>
