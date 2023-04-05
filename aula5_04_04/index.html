@@ -32,10 +32,28 @@
             <div id="resultab2"> </div>
         </div>
         <!--
-            Desenvolva um botão contador de cliques deve exibir quantos cliques o botão recebeu
+            Desenvolva um botão contador de cliques deve exibir quantos cliques o botão recebeu 
         -->
-
+        <h2>Contador de cliques</h2>
+        <button onclick="contaClique()">Clique aqui</button>
+        <p>Este botão recebeu 
+            <span id = "clique">0</span> Cliques.</p> 
     </div>
-    
+    <div>
+        <!--
+            Desenvolva um sorteador de inteiros
+        -->
+        <button onclick="sortear()">Clique para realizar um sorteio</button>
+        <p id = "sorteio"> </p>
+    </div>
+    <div>
+        <h2>Sorteador </h2> 
+        <label for="entre">Entre</label>
+        <input type="number" id="entre"></input>
+        <label for="e">E</label>
+        <input type="number" id="e"></input>
+        <button onclick="sortear2()">Clique para realizar um sorteio</button>
+        <p id = "sorteio2"> </p>
+    </div>
 </body>
 </html>

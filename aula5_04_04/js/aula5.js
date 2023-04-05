@@ -22,3 +22,23 @@ function convetendo(){
         divisoria.appendChild(node);
 }
 }
+
+let click =0;
+function contaClique(){
+click++;
+document.getElementById("clique").innerHTML = click;
+}
+
+
+function sortear()
+  {
+    let sorteado = parseInt(Math.random()*5);
+    document.getElementById("sorteio").innerHTML = `o valor sorteado é  ${sorteado}`;
+  }
+
+  function sortear2(){
+    let e = document.getElementById('e').value;
+    let entre = document.getElementById('entre').value;
+    let sorteado2 = parseInt(Math.random()*e);
+    document.getElementById("sorteio2").innerHTML = `o valor sorteado é  ${sorteado2}`;
+  }
