@@ -37,8 +37,10 @@ function sortear()
   }
 
   function sortear2(){
-    let e = document.getElementById('e').value;
-    let entre = document.getElementById('entre').value;
-    let sorteado2 = parseInt(Math.random()*e);
+    let e = parseInt (document.getElementById('e').value);
+    let entre = parseInt (document.getElementById('entre').value);
+    let sorteado2 = parseInt(Math.random()*(e - entre+1)+entre);
     document.getElementById("sorteio2").innerHTML = `o valor sorteado é  ${sorteado2}`;
   }
+
+  
