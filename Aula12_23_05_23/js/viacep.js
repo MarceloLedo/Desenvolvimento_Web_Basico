@@ -19,6 +19,19 @@ function minhafuncao(conteudo){
         limparFormulario();
     }
 }
+function minhajson(conteudo) {
+        let nome = document.getElementById('nome').value;
+        let email = document.getElementById('email').value;
+        let nascimento = document.getElementById('nascimento').value;
+        let rua = document.getElementById('rua').value;
+        let bairro = document.getElementById('bairro').value;
+        let cidade = document.getElementById('cidade').value;
+        let uf = document.getElementById('uf').value;
+        let ibge = document.getElementById('ibge').value;
+        
+        document.getElementById('..').innerHTML = '{ /n' + '\n' + nome + '\n' + email +'\n' + nascimento + '\n' + rua +'\n' + bairro + '\n' + cidade +'\n' + uf + '\n' + ibge + '}';
+        
+}
 
 function pesquisacep(valor){
     //regex ou expressão regular
