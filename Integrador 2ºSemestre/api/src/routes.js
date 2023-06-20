@@ -23,5 +23,10 @@ router.get('/cadastro/:id', CadastroControllers.show)
 router.post('/cadastro', CadastroControllers.store)
 router.put('/cadastro/:id', CadastroControllers.update)
 router.delete('/cadastro/:id', CadastroControllers.delete)
-
+//
+router.get('/chamado_funcionario', CadastroControllers.index)
+router.get('/chamado_funcionario/:id', CadastroControllers.show)
+router.post('/chamado_funcionario', CadastroControllers.store)
+router.put('/chamado_funcionario/:id', CadastroControllers.update)
+router.delete('/chamado_funcionario/:id', CadastroControllers.delete)
 export default router
